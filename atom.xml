@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://xiaolinge.github.io/atom.xml" rel="self"/>
+  <link href="http://xiaolinge.github.io/"/>
+  <updated>2015-12-30T22:37:10+08:00</updated>
+  <id>http://xiaolinge.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Initialize a NodeJS project on Github]]></title>
+    <link href="http://xiaolinge.github.io/blog/2015/12/30/initialize-a-nodejs-project-on-github/"/>
+    <updated>2015-12-30T16:10:55+08:00</updated>
+    <id>http://xiaolinge.github.io/blog/2015/12/30/initialize-a-nodejs-project-on-github</id>
+    <content type="html"><![CDATA[<h2>Github</h2>
+
+<p>New Repository in Github</p>
+
+<h2>Terminal</h2>
+
+<p>Create your project directory in Terminal</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir (project name)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Tell git to make a repo</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git init</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Initialise your project</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm init</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Create a develop branch to develop on it</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git checkout -b develop</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Webpack</h2>
+
+<p>Create enviroment for Webpack and React
+<a href="https://fakefish.github.io/react-webpack-cookbook/index.html" title="https://fakefish.github.io/react-webpack-cookbook/index.html"><code>Webpack and React gitbook</code></a></p>
+
+<p>You should get Webpack installed. We&rsquo;ll do a local install and save it as a project dependency.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm i webpack --save-dev</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Structure your project like this:</p>
+
+<ul>
+<li>/app
+
+<ul>
+<li>main.js</li>
+<li>component.js</li>
+</ul>
+</li>
+<li>/build
+
+<ul>
+<li>bundle.js (自动创建)</li>
+<li>index.html</li>
+</ul>
+</li>
+<li>package.json</li>
+<li>webpack.config.js</li>
+</ul>
+
+
+<p>let&rsquo;s set up webpack.config.js</p>
+
+<p>webpack.config.js</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>var path = require('path');
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>module.exports = {
+</span><span class='line'>    entry: path.resolve(__dirname, 'app/main.js'),
+</span><span class='line'>    output: {
+</span><span class='line'>        path: path.resolve(__dirname, 'build'),
+</span><span class='line'>        filename: 'bundle.js',
+</span><span class='line'>    },
+</span><span class='line'>};</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
