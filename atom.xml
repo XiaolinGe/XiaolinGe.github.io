@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Lynn's Blog]]></title>
   <link href="http://xiaolinge.github.io/atom.xml" rel="self"/>
   <link href="http://xiaolinge.github.io/"/>
-  <updated>2016-03-06T15:39:05+13:00</updated>
+  <updated>2016-03-06T17:18:31+13:00</updated>
   <id>http://xiaolinge.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Lynn Ge]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -46,6 +46,9 @@
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git checkout -b develop</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
 
 
 <h2>Webpack</h2>
