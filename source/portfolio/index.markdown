@@ -5,6 +5,11 @@ comments: true
 sharing: true
 footer: true
 ---
+##Develop
+###Jibble official website http://www.jibble.co.nz
+###website template http://www.jibble.co.nz/jibble/demo1
+###website template http://www.jibble.co.nz/jibble/demo2
+##Design
 
 ![1](/images/cv-png/1.png)
 ![1](/images/cv-png/2.png)
